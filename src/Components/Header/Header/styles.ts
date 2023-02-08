@@ -1,0 +1,108 @@
+import styled from "styled-components";
+import Nav from "../Nav";
+
+export const Header = styled.header`
+  position: fixed;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  width: 100%;
+  background-color: ${(props) => props.theme.colors.background};
+  box-shadow: 0px 1px 5px rgb(0 0 0 / 30%);
+  @media (max-width: 430px) {
+    padding: 20px 15px;
+  }
+`;
+
+export const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  color: ${(props) => props.theme.colors.text};
+`;
+
+export const Name = styled.span`
+  padding: 0 15px;
+  font-size: 1.6rem;
+  color: ${(props) => props.theme.colors.text};
+  user-select: none;
+  span {
+    position: relative;
+  }
+  span:first-of-type::before {
+    content: "{ ";
+    color: ${(props) => props.theme.colors.secundary};
+    position: absolute;
+    left: -15px;
+    top: -2px;
+  }
+  span:last-of-type::after {
+    content: " }";
+    color: ${(props) => props.theme.colors.secundary};
+    position: absolute;
+    right: -15px;
+    top: -2px;
+  }
+  @media (max-width: 430px) {
+    font-size: 1.4rem;
+  }
+  @media (max-width: 380px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+export const StyledNav = styled(Nav)`
+  ul {
+    gap: 10px;
+  }
+
+  a {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+`;
+
+export const RightContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  @media (max-width: 430px) {
+    gap: 25px;
+  }
+`;
+
+export const MenuMobile = styled.span`
+  border-top: 2px solid;
+  width: 20px;
+  &[data-active="true"] {
+    border-top-color: transparent;
+  }
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    position: relative;
+    transition: 0.3s;
+  }
+  &[data-active="true"]::before {
+    transform: rotate(135deg);
+  }
+  &[data-active="true"]::after {
+    transform: rotate(-135deg);
+    top: -8px;
+  }
+  @media (min-width: 800px) {
+    display: none;
+  }
+`;
