@@ -3,11 +3,11 @@ export default {
 
   colors: {
     primary: "#333",
-    secundary: "#70e000",
+    secundary: "#29bf12",
     tertiary: "#e5e5e5",
 
     background: "#f5f5f5",
-    text: "#333",
-    linkHover: "#000",
+    text1: "#333",
+    text2: "#000",
   },
 };

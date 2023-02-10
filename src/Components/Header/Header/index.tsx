@@ -14,19 +14,19 @@ const Header: React.FC<Props> = ({
 }) => {
   return (
     <S.Header>
-      <S.Container>
+      <S.StyledContainer>
         <S.Name>
           <span>Paulo</span> <span>Henrique</span>
         </S.Name>
         <S.StyledNav />
-        <S.RightContainer>
-          <ThemeSwitch toggleTheme={toggleTheme} />
-          <S.MenuMobile
-            onClick={() => setMobileMenu(!mobileMenu)}
-            data-active={mobileMenu}
-          />
-        </S.RightContainer>
-      </S.Container>
+        {/* <S.RightContainer> */}
+        <ThemeSwitch toggleTheme={toggleTheme} />
+        <S.MenuMobile
+          onClick={() => setMobileMenu(!mobileMenu)}
+          data-active={mobileMenu}
+        />
+        {/* </S.RightContainer> */}
+      </S.StyledContainer>
     </S.Header>
   );
 };

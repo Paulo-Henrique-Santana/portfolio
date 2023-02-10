@@ -16,14 +16,14 @@ const hoverLink = keyframes`
 export const A = styled.a`
   position: relative;
   padding: 7px;
-  color: ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.text2};
   cursor: pointer;
   transition: color 0.3s;
   &:hover {
-    color: ${(props) => props.theme.colors.linkHover};
+    color: ${(props) => props.theme.colors.text1};
   }
   &.active {
-    color: ${(props) => props.theme.colors.linkHover};
+    color: ${(props) => props.theme.colors.text1};
   }
   ::after {
     content: "";

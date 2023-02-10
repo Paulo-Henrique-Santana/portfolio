@@ -1,34 +1,31 @@
 import styled from "styled-components";
+import Container from "../../Container";
 import Nav from "../Nav";
 
 export const Header = styled.header`
   position: fixed;
+  top: 0;
   z-index: 200;
   display: flex;
   justify-content: center;
-  padding: 25px;
+  padding: 25px 0;
   width: 100%;
-  background-color: ${(props) => props.theme.colors.background};
   box-shadow: 0px 1px 5px rgb(0 0 0 / 30%);
-  @media (max-width: 430px) {
-    padding: 20px 15px;
+  @media (max-width: 390px) {
+    padding: 15px 0;
   }
 `;
 
-export const Container = styled.div`
+export const StyledContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 1440px;
-  color: ${(props) => props.theme.colors.text};
 `;
 
 export const Name = styled.span`
   padding: 0 15px;
   font-size: 1.6rem;
-  color: ${(props) => props.theme.colors.text};
-  user-select: none;
+  color: ${(props) => props.theme.colors.text1};
   span {
     position: relative;
   }
@@ -49,7 +46,7 @@ export const Name = styled.span`
   @media (max-width: 430px) {
     font-size: 1.4rem;
   }
-  @media (max-width: 380px) {
+  @media (max-width: 390px) {
     display: flex;
     flex-direction: column;
   }
@@ -57,7 +54,7 @@ export const Name = styled.span`
 
 export const StyledNav = styled(Nav)`
   ul {
-    gap: 10px;
+    gap: 15px;
   }
 
   a {
@@ -71,8 +68,11 @@ export const StyledNav = styled(Nav)`
 
 export const RightContainer = styled.div`
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  margin-left: 25px;
+  width: 100%;
+  max-width: 140px;
   @media (max-width: 430px) {
     gap: 25px;
   }
@@ -102,7 +102,7 @@ export const MenuMobile = styled.span`
     transform: rotate(-135deg);
     top: -8px;
   }
-  @media (min-width: 800px) {
+  @media (min-width: 801px) {
     display: none;
   }
 `;

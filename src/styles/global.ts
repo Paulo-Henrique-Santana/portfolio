@@ -15,6 +15,13 @@ export const GlobalStyle = createGlobalStyle`
   
   body {
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-color: ${(props) => props.theme.colors.background};
+    user-select: none;
+  }
+
+  #root {
+    min-height: 100vh;
   }
 
   a {

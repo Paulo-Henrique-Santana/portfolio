@@ -10,8 +10,8 @@ declare module "styled-components" {
       tertiary?: string;
 
       background: string;
-      text: string;
-      linkHover?: string;
+      text1: string;
+      text2: string;
     };
   }
 }

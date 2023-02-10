@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import Header from "./Components/Header/Header";
+import Home from "./Components/Home/Home";
 import NavMobile from "./Components/NavMobile";
 import { GlobalStyle } from "./styles/global";
 import dark from "./styles/themes/dark";
@@ -22,6 +23,7 @@ const App = () => {
         mobileMenu={mobileMenu}
         setMobileMenu={setMobileMenu}
       />
+      <Home />
       <NavMobile active={mobileMenu} />
     </ThemeProvider>
   );

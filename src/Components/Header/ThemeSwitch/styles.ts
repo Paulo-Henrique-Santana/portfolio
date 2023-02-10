@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import DarkMode from "../../Svg/DarkMode/DarkMode";
-import LightMode from "../../Svg/LightMode/LightMode";
+import DarkMode from "../../Svg/DarkMode";
+import LightMode from "../../Svg/LightMode";
 
 export const ContainerThemeMode = styled.div`
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
 `;
 
 export const SVGDarkMode = styled(DarkMode)`
@@ -14,11 +14,7 @@ export const SVGDarkMode = styled(DarkMode)`
   * {
     fill: ${(props) => props.theme.colors.primary};
   }
-  /* @media (max-width: 480px) {
-    width: 15px;
-    height: 15px;
-  } */
-  @media (max-width: 310px) {
+  @media (max-width: 325px) {
     display: none;
   }
 `;
@@ -29,11 +25,7 @@ export const SVGLightMode = styled(LightMode)`
   * {
     fill: ${(props) => props.theme.colors.primary};
   }
-  /* @media (max-width: 480px) {
-    width: 15px;
-    height: 15px;
-  } */
-  @media (max-width: 310px) {
+  @media (max-width: 325px) {
     display: none;
   }
 `;
