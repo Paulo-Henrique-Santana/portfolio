@@ -4,15 +4,6 @@ export const Ul = styled.ul`
   display: flex;
 `;
 
-const hoverLink = keyframes`
-  from {
-    width: 1px;
-  }
-  to {
-    width: calc(100% - 14px);
-  }
-`;
-
 export const A = styled.a`
   position: relative;
   padding: 7px;
@@ -27,14 +18,15 @@ export const A = styled.a`
   }
   ::after {
     content: "";
-    height: 2px;
     position: absolute;
     bottom: 1px;
     left: 7px;
+    height: 2px;
+    width: 0;
     background-color: var(--color2);
+    transition: 0.4s;
   }
-  &.active::after {
+  &:hover::after {
     width: calc(100% - 14px);
-    animation: ${hoverLink} 0.5s forwards;
   }
 `;

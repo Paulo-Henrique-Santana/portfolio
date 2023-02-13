@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Nav from "../Header/Nav";
+import Nav from "../Nav";
 
 export const StyledNav = styled(Nav)`
   display: none;
@@ -9,7 +9,7 @@ export const StyledNav = styled(Nav)`
   z-index: 100;
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(10px);
   &[data-active="true"] {
     display: block;
   }

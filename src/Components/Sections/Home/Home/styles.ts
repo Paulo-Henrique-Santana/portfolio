@@ -1,30 +1,24 @@
-import styled, { keyframes } from "styled-components";
-import Container from "../../Container";
-import Download from "../../Svg/Download";
+import styled from "styled-components";
+import Container from "../../../Container";
+import { FaDownload } from "react-icons/fa";
+import BackgroundContainer from "../../../BackgroundContainer";
 
-export const Home = styled.section`
-  display: flex;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
+export const Home = styled(BackgroundContainer)`
+  height: 100vh;
 `;
 
 export const StyledContainer = styled(Container)`
   position: relative;
   display: flex;
   align-items: center;
-  padding: 20rem 0;
   color: ${(props) => props.theme.colors.text1};
-  @media (max-width: 800px) {
-    padding: 16rem 0;
-  }
 `;
 
 export const WelcomeMsg = styled.p`
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: ${(props) => props.theme.colors.text1};
   @media (max-width: 800px) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 `;
 
@@ -41,10 +35,10 @@ export const Name = styled.h1`
 `;
 
 export const Profession = styled.h2`
-  margin-top: 0.4rem;
+  margin-top: 0.35rem;
   font-size: 1.3rem;
   font-weight: normal;
-  color: #bfc0c0;
+  color: ${(props) => props.theme.colors.text2};
   @media (max-width: 800px) {
     font-size: 1.1rem;
   }
@@ -53,10 +47,11 @@ export const Profession = styled.h2`
 export const DownloadCV = styled.a`
   display: flex;
   align-items: center;
+  gap: 7px;
   margin-top: 0.8rem;
   border: 2px solid ${(props) => props.theme.colors.secundary};
   border-radius: 5px;
-  padding: 0.6rem 0.9rem;
+  padding: 0.7rem;
   max-width: max-content;
   color: ${(props) => props.theme.colors.secundary};
   background-color: transparent;
@@ -65,27 +60,20 @@ export const DownloadCV = styled.a`
   cursor: pointer;
   transition: all 0.4s ease-in-out;
   &:hover {
-    color: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.background1};
     background-color: ${(props) => props.theme.colors.secundary};
   }
-  svg {
-    fill: ${(props) => props.theme.colors.secundary};
-    transition: all 0.4s ease-in-out;
-  }
   &:hover svg {
-    fill: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.background1};
   }
   @media (max-width: 800px) {
-    padding: 0.5rem 0.8rem;
+    padding: 0.6rem;
     font-size: 0.75rem;
   }
 `;
 
-export const SVGDownload = styled(Download)`
-  width: 25px;
-  height: 25px;
-  @media (max-width: 800px) {
-    width: 20px;
-    height: 20px;
-  }
+export const DownloadIcon = styled(FaDownload)`
+  color: ${(props) => props.theme.colors.secundary};
+  transition: all 0.4s ease-in-out;
+  font-size: 1.1rem;
 `;

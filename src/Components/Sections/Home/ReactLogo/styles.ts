@@ -3,19 +3,22 @@ import styled, { keyframes } from "styled-components";
 const teste = keyframes`
   0% {
     transform: rotate(360deg);
-    opacity: 0.7;
+    opacity: 0.6;
   }
-  25% {
-    opacity: 0.2;
+  20% {
+    opacity: 0.05;
   }
-  50% {
-    opacity: 0;
+  40% {
+    opacity: 0.4;
   }
-  75% {
-    opacity: 0.5;
+  60% {
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 0.3;
   }
   100% {
-    opacity: 0.7;
+    opacity: 0.6;
   }
 `;
 

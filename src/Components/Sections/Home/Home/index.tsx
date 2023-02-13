@@ -1,11 +1,9 @@
-import React from "react";
 import ReactLogo from "../ReactLogo";
 import * as S from "./styles";
 
 const Home = () => {
   return (
-    <S.Home>
-      {/* <S.Photo/> */}
+    <S.Home id="home">
       <S.StyledContainer>
         <div>
           <S.WelcomeMsg>Seja bem-vindo(a)!</S.WelcomeMsg>
@@ -15,7 +13,7 @@ const Home = () => {
             href="../../../curriculo_paulo_henrique.pdf"
             download="cv-paulo-henrique"
           >
-            <S.SVGDownload />
+            <S.DownloadIcon />
             Download CV
           </S.DownloadCV>
         </div>

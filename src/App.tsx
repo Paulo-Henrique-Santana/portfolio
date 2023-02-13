@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { ThemeProvider } from "styled-components";
+import About from "./Components/Sections/About";
 import Header from "./Components/Header/Header";
-import Home from "./Components/Home/Home";
+import Home from "./Components/Sections/Home/Home";
 import NavMobile from "./Components/NavMobile";
+import Skills from "./Components/Sections/Skills";
+import SocialMedia from "./Components/SocialMedia";
 import { GlobalStyle } from "./styles/global";
 import dark from "./styles/themes/dark";
 import light from "./styles/themes/light";
@@ -24,6 +27,9 @@ const App = () => {
         setMobileMenu={setMobileMenu}
       />
       <Home />
+      <About />
+      <Skills />
+      <SocialMedia />
       <NavMobile active={mobileMenu} />
     </ThemeProvider>
   );

@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import Switch from "react-switch";
 import { ThemeContext } from "styled-components";
 import * as S from "./styles";
@@ -12,7 +12,7 @@ const ThemeSwitch: React.FC<Props> = ({ toggleTheme }) => {
 
   return (
     <S.ContainerThemeMode>
-      <S.SVGDarkMode />
+      <S.DarkModeIcon />
       <Switch
         onChange={toggleTheme}
         checked={title === "light"}
@@ -23,10 +23,10 @@ const ThemeSwitch: React.FC<Props> = ({ toggleTheme }) => {
         handleDiameter={15}
         onColor={colors.primary}
         offColor={colors.primary}
-        onHandleColor={colors.background}
-        offHandleColor={colors.background}
+        onHandleColor={colors.background1}
+        offHandleColor={colors.background1}
       />
-      <S.SVGLightMode />
+      <S.LightModeIcon />
     </S.ContainerThemeMode>
   );
 };

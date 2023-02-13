@@ -15,13 +15,9 @@ export const GlobalStyle = createGlobalStyle`
   
   body {
     font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
-    background-color: ${(props) => props.theme.colors.background};
+    background-color: ${(props) => props.theme.colors.background1};
     user-select: none;
-  }
-
-  #root {
-    min-height: 100vh;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
   a {

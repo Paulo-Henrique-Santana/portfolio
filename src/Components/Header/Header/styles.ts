@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Container from "../../Container";
-import Nav from "../Nav";
+import Nav from "../../Nav";
 
 export const Header = styled.header`
   position: fixed;
@@ -8,11 +8,12 @@ export const Header = styled.header`
   z-index: 200;
   display: flex;
   justify-content: center;
-  padding: 25px 0;
+  padding: 25px;
   width: 100%;
   box-shadow: 0px 1px 5px rgb(0 0 0 / 30%);
+  background-color: ${(props) => props.theme.colors.background1};
   @media (max-width: 390px) {
-    padding: 15px 0;
+    padding: 15px 25px;
   }
 `;
 
@@ -43,7 +44,7 @@ export const Name = styled.span`
     right: -15px;
     top: -2px;
   }
-  @media (max-width: 430px) {
+  @media (max-width: 800px) {
     font-size: 1.4rem;
   }
   @media (max-width: 390px) {
