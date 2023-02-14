@@ -67,8 +67,7 @@ export const DownloadCV = styled.a`
     color: ${(props) => props.theme.colors.background1};
   }
   @media (max-width: 800px) {
-    padding: 0.6rem;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 `;
 
