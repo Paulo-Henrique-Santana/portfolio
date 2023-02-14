@@ -10,8 +10,9 @@ const Home = () => {
           <S.Name>Paulo Henrique</S.Name>
           <S.Profession>Desenvolvedor Front-End</S.Profession>
           <S.DownloadCV
-            href="../../../curriculo_paulo_henrique.pdf"
+            href="/cv_paulo_henrique.pdf"
             download="cv-paulo-henrique"
+            type="application/pdf"
           >
             <S.DownloadIcon />
             Download CV
