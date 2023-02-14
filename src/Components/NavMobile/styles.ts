@@ -1,5 +1,14 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Nav from "../Nav";
+
+const show = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 
 export const StyledNav = styled(Nav)`
   display: none;
@@ -10,6 +19,7 @@ export const StyledNav = styled(Nav)`
   width: 100vw;
   height: 100vh;
   backdrop-filter: blur(10px);
+  animation: ${show} 0.3s;
   &[data-active="true"] {
     display: block;
   }
@@ -23,5 +33,6 @@ export const StyledNav = styled(Nav)`
   }
   a {
     font-size: 2rem;
+    font-weight: bold;
   }
 `;

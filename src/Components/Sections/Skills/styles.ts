@@ -3,7 +3,9 @@ import BackgroundContainer from "../../BackgroundContainer";
 import Container from "../../Container";
 
 export const Background = styled(BackgroundContainer)`
-  padding-bottom: 10rem;
+  padding-top: 12rem;
+  padding-bottom: 5rem;
+  scroll-margin-block-start: 2em;
 `;
 
 export const StyledContainer = styled(Container)``;

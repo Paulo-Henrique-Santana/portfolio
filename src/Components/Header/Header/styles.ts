@@ -67,21 +67,10 @@ export const StyledNav = styled(Nav)`
   }
 `;
 
-export const RightContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 25px;
-  width: 100%;
-  max-width: 140px;
-  @media (max-width: 430px) {
-    gap: 25px;
-  }
-`;
-
 export const MenuMobile = styled.span`
   border-top: 2px solid;
   width: 20px;
+  cursor: pointer;
   &[data-active="true"] {
     border-top-color: transparent;
   }
@@ -101,7 +90,7 @@ export const MenuMobile = styled.span`
   }
   &[data-active="true"]::after {
     transform: rotate(-135deg);
-    top: -8px;
+    top: -7px;
   }
   @media (min-width: 801px) {
     display: none;

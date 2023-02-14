@@ -13,9 +13,6 @@ export const A = styled.a`
   &:hover {
     color: ${(props) => props.theme.colors.text1};
   }
-  &.active {
-    color: ${(props) => props.theme.colors.text1};
-  }
   ::after {
     content: "";
     position: absolute;

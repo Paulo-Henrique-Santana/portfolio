@@ -30,7 +30,7 @@ const App = () => {
       <About />
       <Skills />
       <SocialMedia />
-      <NavMobile active={mobileMenu} />
+      <NavMobile active={mobileMenu} setActive={setMobileMenu} />
     </ThemeProvider>
   );
 };

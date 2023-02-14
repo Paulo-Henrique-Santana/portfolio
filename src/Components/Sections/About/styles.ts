@@ -4,7 +4,7 @@ import Container from "../../Container";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 export const About = styled(BackgroundContainer)`
-  padding-bottom: 10rem;
+  /* margin-bottom: 5rem; */
 `;
 
 export const StyledContainer = styled(Container)`

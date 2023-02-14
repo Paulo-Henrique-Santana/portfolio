@@ -2,12 +2,11 @@ import React from "react";
 import Title from "../../Title";
 import * as SI from "react-icons/si";
 import * as DI from "react-icons/di";
-import * as IM from "react-icons/im";
 import * as S from "./styles";
 
 const Skills: React.FC = () => {
   return (
-    <S.Background>
+    <S.Background id="skills">
       <S.StyledContainer>
         <Title>Conhecimentos</Title>
         <S.Skills>

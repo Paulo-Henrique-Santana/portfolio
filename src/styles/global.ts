@@ -12,11 +12,10 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: ${(props) => props.theme.colors.background1};
-    user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 

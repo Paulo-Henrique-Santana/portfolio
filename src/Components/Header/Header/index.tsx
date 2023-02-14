@@ -19,13 +19,11 @@ const Header: React.FC<Props> = ({
           <span>Paulo</span> <span>Henrique</span>
         </S.Name>
         <S.StyledNav />
-        {/* <S.RightContainer> */}
         <ThemeSwitch toggleTheme={toggleTheme} />
         <S.MenuMobile
           onClick={() => setMobileMenu(!mobileMenu)}
           data-active={mobileMenu}
         />
-        {/* </S.RightContainer> */}
       </S.StyledContainer>
     </S.Header>
   );
