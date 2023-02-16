@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import BackgroundContainer from "../../BackgroundContainer";
+import BackgroundSection from "../../BackgroundSection";
 import Container from "../../Container";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
-export const About = styled(BackgroundContainer)`
-  /* margin-bottom: 5rem; */
+export const About = styled(BackgroundSection)`
+  padding-bottom: 7.5rem;
 `;
 
 export const StyledContainer = styled(Container)`

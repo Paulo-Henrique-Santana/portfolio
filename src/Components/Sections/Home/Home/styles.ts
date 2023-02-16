@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import Container from "../../../Container";
 import { FaDownload } from "react-icons/fa";
-import BackgroundContainer from "../../../BackgroundContainer";
+import BackgroundSection from "../../../BackgroundSection";
 
-export const Home = styled(BackgroundContainer)`
+export const Home = styled(BackgroundSection)`
   height: 100vh;
 `;
 

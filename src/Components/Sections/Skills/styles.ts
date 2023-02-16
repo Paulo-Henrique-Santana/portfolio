@@ -1,11 +1,9 @@
 import styled from "styled-components";
-import BackgroundContainer from "../../BackgroundContainer";
+import BackgroundSection from "../../BackgroundSection";
 import Container from "../../Container";
 
-export const Background = styled(BackgroundContainer)`
-  padding-top: 12rem;
-  padding-bottom: 5rem;
-  scroll-margin-block-start: 2em;
+export const Background = styled(BackgroundSection)`
+  padding: 7.5rem 0;
 `;
 
 export const StyledContainer = styled(Container)``;

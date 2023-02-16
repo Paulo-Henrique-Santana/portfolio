@@ -8,12 +8,12 @@ export const Header = styled.header`
   z-index: 200;
   display: flex;
   justify-content: center;
-  padding: 25px;
+  padding: 25px 0;
   width: 100%;
   box-shadow: 0px 1px 5px rgb(0 0 0 / 30%);
   background-color: ${(props) => props.theme.colors.background1};
   @media (max-width: 390px) {
-    padding: 15px 25px;
+    padding: 15px 0;
   }
 `;
 

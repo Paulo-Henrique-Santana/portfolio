@@ -22,6 +22,7 @@ const Nav: React.FC<Props> = ({
 
     if (href) {
       const section = document.querySelector(href);
+      // console.log(section);
       section?.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
