@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ThemeProvider } from "styled-components";
 import About from "./Components/Sections/About";
 import Header from "./Components/Header/Header";
@@ -11,15 +11,21 @@ import dark from "./styles/themes/dark";
 import light from "./styles/themes/light";
 
 const App = () => {
-  const [theme, setTheme] = useState(dark);
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark"
+  );
   const [mobileMenu, setMobileMenu] = useState(false);
 
   const toggleTheme = () => {
-    setTheme(theme.title === "dark" ? light : dark);
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
+  useEffect(() => {
+    if (typeof theme === "string") localStorage.setItem("theme", theme);
+  }, [theme]);
+
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme === "dark" ? dark : light}>
       <GlobalStyle />
       <Header
         toggleTheme={toggleTheme}
