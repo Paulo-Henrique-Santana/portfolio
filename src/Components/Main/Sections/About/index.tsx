@@ -1,11 +1,11 @@
-import Title from "../../Title";
+import SectionTitle from "../SectionTitle";
 import * as S from "./styles";
 
 const About = () => {
   return (
     <S.About id="about">
       <S.StyledContainer>
-        <Title>Sobre Mim</Title>
+        <SectionTitle>Sobre Mim</SectionTitle>
         <S.TextAbout>
           <S.LeftQuote />
           Tenho 21 anos e moro na Zona Sul de São Paulo. Sou formado como

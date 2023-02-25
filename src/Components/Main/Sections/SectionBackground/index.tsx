@@ -7,12 +7,12 @@ interface Props {
   id?: string;
 }
 
-const BackgroundSection: React.FC<Props> = ({ children, className, id }) => {
+const SectionBackground: React.FC<Props> = ({ children, className, id }) => {
   return (
-    <S.BackgroundSection className={className} id={id}>
+    <S.SectionBackground className={className} id={id}>
       {children}
-    </S.BackgroundSection>
+    </S.SectionBackground>
   );
 };
 
-export default BackgroundSection;
+export default SectionBackground;

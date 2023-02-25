@@ -1,11 +1,9 @@
 import styled from "styled-components";
-import BackgroundSection from "../../BackgroundSection";
-import Container from "../../Container";
+import SectionBackground from "../SectionBackground";
+import Container from "../../../Container";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
-export const About = styled(BackgroundSection)`
-  padding-bottom: 7.5rem;
-`;
+export const About = styled(SectionBackground)``;
 
 export const StyledContainer = styled(Container)`
   display: flex;

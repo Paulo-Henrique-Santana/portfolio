@@ -1,12 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-  :root {
-    --color1: #e5e5e5;
-    --color2: #70e000;
-    --color3: #14080e;
-  }
-  
   * {
     margin: 0;
     padding: 0;
@@ -25,5 +19,10 @@ export const GlobalStyle = createGlobalStyle`
 
   ul {
     list-style: none;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
   }
 `;

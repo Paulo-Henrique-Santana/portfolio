@@ -1,20 +1,21 @@
 import { useEffect, useState } from "react";
 import { ThemeProvider } from "styled-components";
-import About from "./Components/Sections/About";
+import About from "./Components/Main/Sections/About";
 import Header from "./Components/Header/Header";
-import Home from "./Components/Sections/Home/Home";
+import Home from "./Components/Main/Sections/Home/Home";
 import NavMobile from "./Components/NavMobile";
-import Skills from "./Components/Sections/Skills";
-import SocialMedia from "./Components/SocialMedia";
+import Skills from "./Components/Main/Sections/Skills";
+import SocialMedia from "./Components/Main/SocialMedia";
 import { GlobalStyle } from "./styles/global";
 import dark from "./styles/themes/dark";
 import light from "./styles/themes/light";
+import Main from "./Components/Main/Main";
 
 const App = () => {
+  const [mobileMenu, setMobileMenu] = useState(false);
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark"
   );
-  const [mobileMenu, setMobileMenu] = useState(false);
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -32,10 +33,7 @@ const App = () => {
         mobileMenu={mobileMenu}
         setMobileMenu={setMobileMenu}
       />
-      <Home />
-      <About />
-      <Skills />
-      <SocialMedia />
+      <Main />
       <NavMobile active={mobileMenu} setActive={setMobileMenu} />
     </ThemeProvider>
   );

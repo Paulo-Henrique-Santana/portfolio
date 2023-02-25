@@ -1,10 +1,8 @@
 import styled from "styled-components";
-import BackgroundSection from "../../BackgroundSection";
-import Container from "../../Container";
+import SectionBackground from "../SectionBackground";
+import Container from "../../../Container";
 
-export const Background = styled(BackgroundSection)`
-  padding: 7.5rem 0;
-`;
+export const Background = styled(SectionBackground)``;
 
 export const StyledContainer = styled(Container)``;
 
@@ -26,8 +24,8 @@ export const Skill = styled.li`
   box-shadow: 0px 0px 5px rgb(0 0 0 / 20%);
   border-radius: 5px;
   padding: 1.5rem 0.75rem;
-  width: 170px;
-  height: 170px;
+  width: 150px;
+  height: 150px;
   background-color: ${(props) => props.theme.colors.background2};
   font-size: 0.9rem;
   font-weight: bold;
@@ -40,7 +38,7 @@ export const Skill = styled.li`
   &:hover {
     border-color: ${(props) => props.theme.colors.primary};
   }
-  @media (max-width: 430px) {
+  @media (max-width: 380px) {
     flex: 1;
     width: 100%;
   }
