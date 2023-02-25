@@ -14,18 +14,6 @@ const Nav: React.FC<Props> = ({
 }) => {
   const nav = useRef<HTMLElement>(null);
 
-  const handleClickLink = (event: React.MouseEvent) => {
-    event.preventDefault();
-
-    const { currentTarget } = event;
-    const href = currentTarget.getAttribute("href");
-
-    if (href) {
-      const section = document.querySelector(href);
-      section?.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-  };
-
   return (
     <nav
       ref={nav}
@@ -35,24 +23,16 @@ const Nav: React.FC<Props> = ({
     >
       <S.Ul>
         <li>
-          <S.A href="#home" onClick={handleClickLink}>
-            Início
-          </S.A>
+          <S.A href="#home">Início</S.A>
         </li>
         <li>
-          <S.A href="#about" onClick={handleClickLink}>
-            Sobre
-          </S.A>
+          <S.A href="#about">Sobre</S.A>
         </li>
         <li>
-          <S.A href="#skills" onClick={handleClickLink}>
-            Conhecimentos
-          </S.A>
+          <S.A href="#skills">Conhecimentos</S.A>
         </li>
         <li>
-          <S.A href="#projects" onClick={handleClickLink}>
-            Projetos
-          </S.A>
+          <S.A href="#projects">Projetos</S.A>
         </li>
       </S.Ul>
     </nav>

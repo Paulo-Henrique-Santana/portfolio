@@ -7,6 +7,11 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+  }
+
   body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: ${(props) => props.theme.colors.background1};

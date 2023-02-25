@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SectionTitle = styled.h2`
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   text-align: center;
   font-size: 2rem;
   color: ${(props) => props.theme.colors.text1};
