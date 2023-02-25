@@ -15,10 +15,11 @@ export const StyledNav = styled(Nav)`
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 100;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
   backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.3);
   animation: ${show} 0.3s;
   &[data-active="true"] {
     display: block;
@@ -34,5 +35,6 @@ export const StyledNav = styled(Nav)`
   a {
     font-size: 2rem;
     font-weight: bold;
+    color: ${(props) => props.theme.colors.text1};
   }
 `;
