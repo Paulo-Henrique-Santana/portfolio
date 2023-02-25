@@ -20,7 +20,7 @@ export const A = styled.a`
     left: 7px;
     height: 2px;
     width: 0;
-    background-color: var(2);
+    background-color: ${(props) => props.theme.colors.secundary};
     transition: 0.4s;
   }
   &:hover::after {
