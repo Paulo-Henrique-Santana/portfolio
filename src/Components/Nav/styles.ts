@@ -5,6 +5,7 @@ export const Ul = styled.ul`
 `;
 
 export const A = styled.a`
+  display: inline-block;
   position: relative;
   padding: 7px;
   color: ${(props) => props.theme.colors.text2};

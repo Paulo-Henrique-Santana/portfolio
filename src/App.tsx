@@ -9,7 +9,7 @@ import SocialMedia from "./Components/Main/SocialMedia";
 import { GlobalStyle } from "./styles/global";
 import dark from "./styles/themes/dark";
 import light from "./styles/themes/light";
-import Main from "./Components/Main/Main";
+import Main from "./Components/Main/Main/Main";
 
 const App = () => {
   const [mobileMenu, setMobileMenu] = useState(false);

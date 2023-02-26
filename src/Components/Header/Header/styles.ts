@@ -59,10 +59,10 @@ export const StyledNav = styled(Nav)`
   }
 
   a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     display: none;
   }
 `;
@@ -92,7 +92,7 @@ export const MenuMobile = styled.span`
     transform: rotate(-135deg);
     top: -7px;
   }
-  @media (min-width: 801px) {
+  @media (min-width: 851px) {
     display: none;
   }
 `;

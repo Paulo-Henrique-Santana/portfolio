@@ -13,6 +13,13 @@ const Nav: React.FC<Props> = ({
   onClick,
 }) => {
   const nav = useRef<HTMLElement>(null);
+  const links = [
+    { href: "#home", text: "Início" },
+    { href: "#about", text: "Sobre" },
+    { href: "#skills", text: "Conhecimentos" },
+    { href: "#projects", text: "Projetos" },
+    { href: "#contact", text: "Contato" },
+  ];
 
   const handleClickLink = (event: React.MouseEvent) => {
     event.preventDefault();
@@ -33,26 +40,13 @@ const Nav: React.FC<Props> = ({
       onClick={onClick}
     >
       <S.Ul>
-        <li>
-          <S.A href="#home" onClick={handleClickLink}>
-            Início
-          </S.A>
-        </li>
-        <li>
-          <S.A href="#about" onClick={handleClickLink}>
-            Sobre
-          </S.A>
-        </li>
-        <li>
-          <S.A href="#skills" onClick={handleClickLink}>
-            Conhecimentos
-          </S.A>
-        </li>
-        <li>
-          <S.A href="#projects" onClick={handleClickLink}>
-            Projetos
-          </S.A>
-        </li>
+        {links.map((link, index) => (
+          <li key={index}>
+            <S.A href={link.href} onClick={handleClickLink}>
+              {link.text}
+            </S.A>
+          </li>
+        ))}
       </S.Ul>
     </nav>
   );

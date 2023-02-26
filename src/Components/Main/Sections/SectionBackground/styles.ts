@@ -4,6 +4,7 @@ export const SectionBackground = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   position: relative;
   overflow-x: hidden;
   &:nth-child(n + 2) {
