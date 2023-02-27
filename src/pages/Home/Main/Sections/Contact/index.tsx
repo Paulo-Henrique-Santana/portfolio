@@ -4,6 +4,8 @@ import SectionBackground from "../SectionBackground";
 import SectionTitle from "../SectionTitle";
 
 const Contact = () => {
+  console.log(window.location.href);
+
   const contacts = [
     {
       href: "https://wa.me/5511933123649",
@@ -51,11 +53,11 @@ const Contact = () => {
             <S.TextArea id="msg" name="message" rows={10} required />
           </S.FieldBox>
 
-          <input
+          {/* <input
             type="hidden"
             name="_next"
-            value={`${window.location.href}thanks`}
-          ></input>
+            value={`${window.location.href}email-sucess`}
+          ></input> */}
 
           <S.Submit type="submit">
             <MdOutlineEmail />

@@ -3,9 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./styles/global";
 import dark from "./styles/themes/dark";
 import light from "./styles/themes/light";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Thanks from "./pages/Thanks";
 
 const App = () => {
   const [theme, setTheme] = useState(
@@ -23,12 +21,13 @@ const App = () => {
   return (
     <ThemeProvider theme={theme === "dark" ? dark : light}>
       <GlobalStyle />
-      <BrowserRouter>
+      <Home toggleTheme={toggleTheme} />
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home toggleTheme={toggleTheme} />} />
-          <Route path="thanks" element={<Thanks />} />
+          <Route path="/email-sucess" element={<EmailSucess />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </ThemeProvider>
   );
 };

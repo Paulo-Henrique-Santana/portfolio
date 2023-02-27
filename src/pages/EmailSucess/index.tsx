@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import { FaArrowLeft } from "react-icons/fa";
 
-const Thanks = () => {
+const EmailSucess = () => {
   return (
     <S.Background>
       <S.StyledContainer>
@@ -17,4 +17,4 @@ const Thanks = () => {
   );
 };
 
-export default Thanks;
+export default EmailSucess;
