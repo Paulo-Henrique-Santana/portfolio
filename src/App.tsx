@@ -1,18 +1,13 @@
 import { useEffect, useState } from "react";
 import { ThemeProvider } from "styled-components";
-import About from "./Components/Main/Sections/About";
-import Header from "./Components/Header/Header";
-import Home from "./Components/Main/Sections/Home/Home";
-import NavMobile from "./Components/NavMobile";
-import Skills from "./Components/Main/Sections/Skills";
-import SocialMedia from "./Components/Main/SocialMedia";
 import { GlobalStyle } from "./styles/global";
 import dark from "./styles/themes/dark";
 import light from "./styles/themes/light";
-import Main from "./Components/Main/Main/Main";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Thanks from "./pages/Thanks";
 
 const App = () => {
-  const [mobileMenu, setMobileMenu] = useState(false);
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark"
   );
@@ -28,13 +23,12 @@ const App = () => {
   return (
     <ThemeProvider theme={theme === "dark" ? dark : light}>
       <GlobalStyle />
-      <Header
-        toggleTheme={toggleTheme}
-        mobileMenu={mobileMenu}
-        setMobileMenu={setMobileMenu}
-      />
-      <Main />
-      <NavMobile active={mobileMenu} setActive={setMobileMenu} />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home toggleTheme={toggleTheme} />} />
+          <Route path="thanks" element={<Thanks />} />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 };

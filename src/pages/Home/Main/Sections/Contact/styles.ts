@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Container from "../../../Container";
+import Container from "../../../../../Components/Container";
 import * as BS from "react-icons/bs";
 
 export const StyledContainer = styled(Container)`
@@ -40,6 +40,7 @@ export const Label = styled.label`
   margin-bottom: 0.8rem;
   font-size: 1.15rem;
   font-weight: bold;
+  color: ${(props) => props.theme.colors.text1};
   &:after {
     content: "";
     position: absolute;
@@ -65,7 +66,7 @@ export const Submit = styled.button`
   border-radius: 4px;
   padding: 0.5rem 0;
   width: 100%;
-  max-width: 165px;
+  max-width: 150px;
   background-color: ${(props) => props.theme.colors.primary};
   color: ${(props) => props.theme.colors.background1};
   font-size: 1.15rem;

@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "../SectionTitle";
-import technologiesIcons from "../../../../utilities/technologiesIcons";
+import technologiesIcons from "../../../../../utilities/technologiesIcons";
 import * as S from "./styles";
 
 const Skills: React.FC = () => {

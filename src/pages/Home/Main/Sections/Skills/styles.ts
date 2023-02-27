@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import SectionBackground from "../SectionBackground";
-import Container from "../../../Container";
+import Container from "../../../../../Components/Container";
 
 export const Background = styled(SectionBackground)``;
 
@@ -27,6 +27,7 @@ export const Skill = styled.li`
   width: 150px;
   height: 150px;
   background-color: ${(props) => props.theme.colors.background2};
+  color: ${(props) => props.theme.colors.text2};
   font-size: 0.9rem;
   font-weight: bold;
   text-align: center;

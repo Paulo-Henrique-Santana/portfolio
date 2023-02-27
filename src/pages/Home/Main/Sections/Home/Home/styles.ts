@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Container from "../../../../Container";
+import Container from "../../../../../../Components/Container";
 import { FaDownload } from "react-icons/fa";
 import SectionBackground from "../../SectionBackground";
 

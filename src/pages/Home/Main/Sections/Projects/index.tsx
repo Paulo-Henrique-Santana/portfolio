@@ -1,9 +1,9 @@
-import Container from "../../../Container";
+import Container from "../../../../../Components/Container";
 import SectionBackground from "../SectionBackground";
 import SectionTitle from "../SectionTitle";
-import reactshoes from "../../../../images/reactshoes.png";
-import pokedex from "../../../../images/pokedex.png";
-import technologiesIcons from "../../../../utilities/technologiesIcons";
+import reactshoes from "../../../../../images/reactshoes.png";
+import pokedex from "../../../../../images/pokedex.png";
+import technologiesIcons from "../../../../../utilities/technologiesIcons";
 import * as S from "./styles";
 
 const Projects = () => {

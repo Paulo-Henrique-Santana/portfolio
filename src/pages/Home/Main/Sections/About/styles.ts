@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import SectionBackground from "../SectionBackground";
-import Container from "../../../Container";
+import Container from "../../../../../Components/Container";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 export const About = styled(SectionBackground)``;

@@ -4,12 +4,14 @@ import SectionBackground from "../SectionBackground";
 import SectionTitle from "../SectionTitle";
 
 const Contact = () => {
+  console.log(window.location.href);
+
   return (
     <SectionBackground id="contact">
       <SectionTitle>Contato</SectionTitle>
       <S.StyledContainer>
         <S.Form
-          action="https://S.Formsubmit.co/phenrique.santana@hotmail.com"
+          action="https://formsubmit.co/phenrique.santana@hotmail.com"
           method="POST"
         >
           <S.FieldBox>
@@ -24,6 +26,11 @@ const Contact = () => {
             <S.Label htmlFor="msg">Mensagem</S.Label>
             <S.TextArea id="msg" name="message" rows={10} required />
           </S.FieldBox>
+          <input
+            type="hidden"
+            name="_next"
+            value={`${window.location.href}thanks`}
+          ></input>
           <S.Submit type="submit">
             <MdOutlineEmail />
             Enviar
