@@ -71,6 +71,7 @@ export const MenuMobile = styled.span`
   border-top: 2px solid;
   width: 20px;
   cursor: pointer;
+  color: ${(props) => props.theme.colors.primary};
   &[data-active="true"] {
     border-top-color: transparent;
   }
