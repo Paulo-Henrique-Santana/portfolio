@@ -7,7 +7,10 @@ export const SectionBackground = styled.section`
   flex-direction: column;
   position: relative;
   overflow-x: hidden;
-  &:nth-child(n + 2) {
-    margin-bottom: 10rem;
+  &:nth-child(n + 3) {
+    margin-top: 10rem;
+  }
+  &:nth-last-child(1) {
+    margin-bottom: 4rem;
   }
 `;

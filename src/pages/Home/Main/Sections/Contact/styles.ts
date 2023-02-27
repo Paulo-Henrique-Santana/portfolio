@@ -88,12 +88,17 @@ export const Contacts = styled.div`
 export const Contact = styled.a`
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.7rem;
   margin-bottom: 1rem;
   box-shadow: 0px 0px 5px rgb(0 0 0 / 20%);
-  background-color: ${(props) => props.theme.colors.background2};
+  border: 2px solid transparent;
   border-radius: 10px;
-  padding: 0.8rem;
+  padding: 0.7rem 0.8rem;
+  background-color: ${(props) => props.theme.colors.background2};
+  transition: border 0.3s;
+  &:hover {
+    border-color: ${(props) => props.theme.colors.primary};
+  }
   svg {
     font-size: 1.9rem;
   }
@@ -101,6 +106,16 @@ export const Contact = styled.a`
     font-size: 0.95rem;
     font-weight: bold;
     color: ${(props) => props.theme.colors.text2};
+  }
+  @media (max-width: 350px) {
+    padding: 0.6rem 0.7rem;
+    gap: 0.6rem;
+    svg {
+      font-size: 1.5rem;
+    }
+    span {
+      font-size: 0.85rem;
+    }
   }
 `;
 
@@ -114,4 +129,8 @@ export const EmailIcon = styled(BS.BsEnvelope)`
 
 export const LinkedinIcon = styled(BS.BsLinkedin)`
   color: #0a65c1;
+`;
+
+export const GithubIcon = styled(BS.BsGithub)`
+  color: ${(props) => props.theme.colors.primary};
 `;
