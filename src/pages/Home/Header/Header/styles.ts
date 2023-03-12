@@ -55,14 +55,14 @@ export const Name = styled.span`
 
 export const StyledNav = styled(Nav)`
   ul {
-    gap: 15px;
+    gap: 1rem;
   }
 
   a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 900px) {
     display: none;
   }
 `;
@@ -93,7 +93,7 @@ export const MenuMobile = styled.span`
     transform: rotate(-135deg);
     top: -7px;
   }
-  @media (min-width: 851px) {
+  @media (min-width: 901px) {
     display: none;
   }
 `;
