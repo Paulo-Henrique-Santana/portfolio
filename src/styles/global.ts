@@ -13,6 +13,17 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
+  body::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-clip: content-box;
+    background-color: ${(props) => props.theme.colors.primary};
+  }
+
   a {
     text-decoration: none;
   }
