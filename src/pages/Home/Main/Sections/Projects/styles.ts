@@ -30,14 +30,14 @@ export const About = styled.div`
 export const BoxNameAndTechnologies = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 0.5rem;
+  gap: 0.3rem;
   @media (max-width: 400px) {
     flex-direction: column;
   }
 `;
 
 export const Name = styled.h3`
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: ${(props) => props.theme.colors.text1};
 `;
 
@@ -55,10 +55,11 @@ export const Technology = styled.li`
 export const Description = styled.p`
   display: flex;
   align-items: center;
-  height: 4rem;
+  margin: 0.5rem 0;
+  height: 80px;
   color: ${(props) => props.theme.colors.text2};
   @media (max-width: 400px) {
-    height: 5rem;
+    height: 100px;
   }
 `;
 
@@ -66,13 +67,16 @@ export const Links = styled.div`
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 10%);
-  padding-top: 1rem;
   width: 100%;
+  @media (max-width: 400px) {
+    gap: 1rem;
+  }
 `;
 
 export const Link = styled.a`
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
   border: 2px solid ${(props) => props.theme.colors.primary};
   border-radius: 3px;
   padding: 0.5rem;
@@ -80,8 +84,19 @@ export const Link = styled.a`
   font-size: 0.9rem;
   font-weight: bold;
   transition: all 0.3s;
+  svg {
+    font-size: 1.1rem;
+  }
   &:hover {
     background-color: ${(props) => props.theme.colors.primary};
     color: ${(props) => props.theme.colors.background2};
+  }
+  @media (max-width: 400px) {
+    padding: 0.4rem;
+    gap: 0.2rem;
+    font-size: 0.8rem;
+    svg {
+      font-size: 1rem;
+    }
   }
 `;

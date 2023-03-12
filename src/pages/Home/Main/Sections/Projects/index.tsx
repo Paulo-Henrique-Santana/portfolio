@@ -2,36 +2,31 @@ import Container from "../../../../../Components/Container";
 import SectionBackground from "../SectionBackground";
 import SectionTitle from "../SectionTitle";
 import reactshoes from "../../../../../images/reactshoes.png";
-import pokedex from "../../../../../images/pokedex.png";
+import clima from "../../../../../images/clima.png";
 import technologiesIcons from "../../../../../utilities/technologiesIcons";
+import { HiLink } from "react-icons/hi";
 import * as S from "./styles";
 
 const Projects = () => {
   const projects = [
     {
+      src: clima,
+      name: "Clima",
+      technologies: ["React", "TypeScript", "SASS"],
+      description:
+        "Aplicação desenvolvida consumindo a OpenWeather API, que retorna detalhes sobre o clima atual da cidade pesquisada.",
+      deployLink: "https://climaatual.vercel.app/",
+      repositoryLink: "https://github.com/Paulo-Henrique-Santana/clima",
+    },
+    {
       src: reactshoes,
       name: "ReactShoes",
-      technologies: [
-        "Styled-Components",
-        "React",
-        "JavaScript",
-        "CSS3",
-        "HTML5",
-      ],
+      technologies: ["React", "JavaScript", "Styled-Components"],
       description:
         "E-commerce de tênis que permite buscar e filtrar produtos, adicioná-los aos favoritos e ao carrinho.",
       deployLink: "https://ecommerce-react-tau.vercel.app/",
       repositoryLink:
         "https://github.com/Paulo-Henrique-Santana/ecommerce-react",
-    },
-    {
-      src: pokedex,
-      name: "Pokedex",
-      technologies: ["React", "JavaScript", "CSS3", "HTML5"],
-      description:
-        "Aplicação desenvolvida consumindo a PokeAPI, lista os pokemons e permite buscá-los.",
-      deployLink: "https://pokedex-react-phi-three.vercel.app/",
-      repositoryLink: "https://github.com/Paulo-Henrique-Santana/pokedex-react",
     },
   ];
 
@@ -61,9 +56,11 @@ const Projects = () => {
                 <S.Description>{project.description}</S.Description>
                 <S.Links>
                   <S.Link href={project.deployLink} target="_blank">
+                    <HiLink />
                     Projeto
                   </S.Link>
                   <S.Link href={project.repositoryLink} target="_blank">
+                    <HiLink />
                     Repositório
                   </S.Link>
                 </S.Links>

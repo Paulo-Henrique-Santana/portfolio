@@ -4,8 +4,6 @@ import SectionBackground from "../SectionBackground";
 import SectionTitle from "../SectionTitle";
 
 const Contact = () => {
-  console.log(window.location.href);
-
   const contacts = [
     {
       href: "https://wa.me/5511933123649",
