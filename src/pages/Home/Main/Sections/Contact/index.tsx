@@ -11,7 +11,7 @@ const Contact = () => {
       text: "+55 11 933123649",
     },
     {
-      href: "https://www.linkedin.com/in/paulo-henrique-3479821bb/",
+      href: "https://www.linkedin.com/in/paulo-henrique-santana-dev/",
       icon: <S.LinkedinIcon />,
       text: "Paulo Henrique",
     },
@@ -50,12 +50,6 @@ const Contact = () => {
             <S.Label htmlFor="msg">Mensagem</S.Label>
             <S.TextArea id="msg" name="message" rows={10} required />
           </S.FieldBox>
-
-          {/* <input
-            type="hidden"
-            name="_next"
-            value={`${window.location.href}email-sucess`}
-          ></input> */}
 
           <S.Submit type="submit">
             <MdOutlineEmail />
