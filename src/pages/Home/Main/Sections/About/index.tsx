@@ -8,14 +8,13 @@ const About = () => {
         <SectionTitle>Sobre Mim</SectionTitle>
         <S.TextAbout>
           <S.LeftQuote />
-          Tenho 21 anos e moro na Zona Sul de São Paulo. Sou formado como
-          Técnico em Desenvolvimento de Sistemas pela ETEC e estou no 2º
-          semestre do curso de Ciência da Computação pela UNIP. Sou um
-          desenvolvedor focado e totalmente interessado em aprimorar meus
-          conhecimentos, atualmente dedico a maior parte do meu tempo estudando
-          tecnologias voltadas para o Front-End através de cursos online, lendo
-          documentações e desenvolvendo projetos como este para aplicar todo o
-          conhecimento que adquiro.
+          Atualmente, minha atenção está direcionada para a área de
+          desenvolvimento web, onde tenho tido a oportunidade de aprimorar
+          minhas habilidades e criar experiências. A busca constante por
+          aprender novas tecnologias e encontrar maneiras mais eficazes de
+          desenvolver é a minha principal motivação. Estou entusiasmado em
+          continuar crescendo profissionalmente e contribuindo para projetos
+          desafiadores.
           <S.RightQuote />
         </S.TextAbout>
       </S.StyledContainer>

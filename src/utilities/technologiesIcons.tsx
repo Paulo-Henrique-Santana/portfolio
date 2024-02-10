@@ -1,19 +1,58 @@
+import { DiSass } from "react-icons/di";
+import { FaAngular, FaNodeJs } from "react-icons/fa";
 import {
   SiCss3,
+  SiCypress,
+  SiExpress,
   SiGit,
   SiHtml5,
   SiJavascript,
   SiReact,
+  SiSequelize,
   SiStyledcomponents,
   SiTypescript,
 } from "react-icons/si";
-import { DiSass } from "react-icons/di";
 
 interface TechnologiesIcons {
   [key: string]: unknown;
 }
 
 const technologiesIcons = {
+  ["Cypress"]: (
+    <SiCypress
+      style={{
+        color: "#ffffff",
+      }}
+    />
+  ),
+  ["Sequelize"]: (
+    <SiSequelize
+      style={{
+        color: "#52b0e7",
+      }}
+    />
+  ),
+  ["Express"]: (
+    <SiExpress
+      style={{
+        color: "#fdfdfd",
+      }}
+    />
+  ),
+  ["Node"]: (
+    <FaNodeJs
+      style={{
+        color: "#57a646",
+      }}
+    />
+  ),
+  ["Angular"]: (
+    <FaAngular
+      style={{
+        color: "#c3002f",
+      }}
+    />
+  ),
   ["Styled-Components"]: (
     <SiStyledcomponents
       style={{
@@ -28,7 +67,6 @@ const technologiesIcons = {
       }}
     />
   ),
-
   ["TypeScript"]: (
     <SiTypescript
       style={{
@@ -36,7 +74,6 @@ const technologiesIcons = {
       }}
     />
   ),
-
   ["JavaScript"]: (
     <SiJavascript
       style={{
@@ -44,7 +81,6 @@ const technologiesIcons = {
       }}
     />
   ),
-
   ["SASS"]: (
     <DiSass
       style={{
@@ -52,7 +88,6 @@ const technologiesIcons = {
       }}
     />
   ),
-
   ["CSS3"]: (
     <SiCss3
       style={{
@@ -60,7 +95,6 @@ const technologiesIcons = {
       }}
     />
   ),
-
   ["HTML5"]: (
     <SiHtml5
       style={{
@@ -68,7 +102,6 @@ const technologiesIcons = {
       }}
     />
   ),
-
   ["Git"]: (
     <SiGit
       style={{

@@ -28,7 +28,7 @@ export const RightQuote = styled(FaQuoteRight)`
 export const TextAbout = styled.p`
   max-width: 1100px;
   color: ${(props) => props.theme.colors.text2};
-  font-size: 1.14rem;
+  font-size: 1.3rem;
   text-align: center;
   line-height: 2rem;
 `;

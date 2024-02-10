@@ -7,7 +7,7 @@ const Skills: React.FC = () => {
   return (
     <S.Background id="skills">
       <S.StyledContainer>
-        <SectionTitle>Conhecimentos</SectionTitle>
+        <SectionTitle>Habilidades</SectionTitle>
         <S.Skills>
           {Object.entries(technologiesIcons).map(([key, value], index) => (
             <S.Skill key={index}>
