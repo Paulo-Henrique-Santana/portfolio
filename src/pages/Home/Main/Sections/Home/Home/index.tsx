@@ -9,14 +9,14 @@ const Home = () => {
           <S.WelcomeMsg>Seja bem-vindo(a)!</S.WelcomeMsg>
           <S.Name>Paulo Henrique</S.Name>
           <S.Profession>Desenvolvedor Front-End</S.Profession>
-          <S.DownloadCV
+          {/* <S.DownloadCV
             href="/cv_paulo_henrique.pdf"
             download="cv-paulo-henrique"
             type="application/pdf"
           >
             <S.DownloadIcon />
             Download CV
-          </S.DownloadCV>
+          </S.DownloadCV> */}
         </div>
         <ReactLogo />
       </S.StyledContainer>
