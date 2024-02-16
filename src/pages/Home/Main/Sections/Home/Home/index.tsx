@@ -8,7 +8,7 @@ const Home = () => {
         <div>
           <S.WelcomeMsg>Seja bem-vindo(a)!</S.WelcomeMsg>
           <S.Name>Paulo Henrique</S.Name>
-          <S.Profession>Desenvolvedor Front-End</S.Profession>
+          <S.Profession>Desenvolvedor Full-Stack</S.Profession>
           {/* <S.DownloadCV
             href="/cv_paulo_henrique.pdf"
             download="cv-paulo-henrique"
