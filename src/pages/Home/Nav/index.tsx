@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import * as S from "./styles";
+import smoothScrollOnClick from "../../../utilities/smoothScrollOnClick";
 
 interface Props {
   className?: string;
@@ -14,23 +15,11 @@ const Nav: React.FC<Props> = ({
 }) => {
   const nav = useRef<HTMLElement>(null);
   const links = [
-    { href: "#home", text: "Início" },
     { href: "#about", text: "Sobre" },
     { href: "#skills", text: "Habilidades" },
     { href: "#projects", text: "Projetos" },
     { href: "#contact", text: "Contato" },
   ];
-
-  const handleClickLink = (event: React.MouseEvent) => {
-    event.preventDefault();
-
-    const href = event.currentTarget.getAttribute("href");
-
-    if (href) {
-      const section = document.querySelector(href);
-      section?.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-  };
 
   return (
     <nav
@@ -42,7 +31,7 @@ const Nav: React.FC<Props> = ({
       <S.Ul>
         {links.map((link, index) => (
           <li key={index}>
-            <S.A href={link.href} onClick={handleClickLink}>
+            <S.A href={link.href} onClick={smoothScrollOnClick}>
               {link.text}
             </S.A>
           </li>

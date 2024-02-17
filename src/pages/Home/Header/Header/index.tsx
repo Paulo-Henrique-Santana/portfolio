@@ -1,3 +1,4 @@
+import smoothScrollOnClick from "../../../../utilities/smoothScrollOnClick";
 import ThemeSwitch from "../ThemeSwitch";
 import * as S from "./styles";
 
@@ -15,7 +16,7 @@ const Header: React.FC<Props> = ({
   return (
     <S.Header>
       <S.StyledContainer>
-        <S.Name>
+        <S.Name href="#home" onClick={smoothScrollOnClick}>
           <span>Paulo</span> <span>Henrique</span>
         </S.Name>
         <S.StyledNav />

@@ -23,7 +23,7 @@ export const StyledContainer = styled(Container)`
   align-items: center;
 `;
 
-export const Name = styled.span`
+export const Name = styled.a`
   padding: 0 15px;
   font-size: 1.6rem;
   color: ${(props) => props.theme.colors.text1};
