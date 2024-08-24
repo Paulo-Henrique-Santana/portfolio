@@ -1,10 +1,11 @@
+import { FaDownload } from "react-icons/fa";
 import styled from "styled-components";
 import Container from "../../../../../../Components/Container";
-import { FaDownload } from "react-icons/fa";
 import SectionBackground from "../../SectionBackground";
 
 export const Home = styled(SectionBackground)`
   height: 100vh;
+  overflow-y: hidden;
 `;
 
 export const StyledContainer = styled(Container)`
