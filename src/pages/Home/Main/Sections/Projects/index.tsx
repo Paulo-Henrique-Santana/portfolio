@@ -16,7 +16,7 @@ const Projects = () => {
       technologies: ["Angular", "TypeScript", "SASS", "Node", "Express", "Sequelize"],
       description:
         "Projeto desenvolvido como parte de um teste técnico para uma vaga, consistindo na criação do front-end e da API para um CRUD de clientes, e com a funcionalidade de seleção de clientes.",
-      repositoryLink: "https://github.com/Paulo-Henrique-Santana/clima",
+      repositoryLink: "https://github.com/Paulo-Henrique-Santana/teste-teddy-front-end",
     },
     {
       src: clima,
