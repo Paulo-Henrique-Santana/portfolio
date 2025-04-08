@@ -1,21 +1,29 @@
 import styled from "styled-components";
 
+const gapProjects = "3rem";
+
 export const Projects = styled.ul`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: ${gapProjects};
   @media (max-width: 800px) {
     flex-direction: column;
   }
 `;
 
 export const Project = styled.li`
-  flex: 1;
+  flex: 1 1 calc(50% - ${gapProjects});
   box-shadow: 0px 0px 5px rgb(0 0 0 / 20%);
   border-radius: 5px;
   border-bottom: 3px solid ${(props) => props.theme.colors.secundary};
   background-color: ${(props) => props.theme.colors.background2};
+  max-width: calc(50% - ${gapProjects});
+
+  @media (max-width: 800px) {
+    flex: 1;
+    max-width: max-content;
+  }
 `;
 
 export const Image = styled.img`

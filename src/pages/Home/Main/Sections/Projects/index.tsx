@@ -1,14 +1,23 @@
+import { HiLink } from "react-icons/hi";
 import Container from "../../../../../Components/Container";
+import clima from "../../../../../images/clima.png";
+import reactshoes from "../../../../../images/reactshoes.png";
+import testeTeddy from "../../../../../images/teste-teddy.png";
+import technologiesIcons from "../../../../../utilities/technologiesIcons";
 import SectionBackground from "../SectionBackground";
 import SectionTitle from "../SectionTitle";
-import reactshoes from "../../../../../images/reactshoes.png";
-import clima from "../../../../../images/clima.png";
-import technologiesIcons from "../../../../../utilities/technologiesIcons";
-import { HiLink } from "react-icons/hi";
 import * as S from "./styles";
 
 const Projects = () => {
   const projects = [
+    {
+      src: testeTeddy,
+      name: "Teste Teddy",
+      technologies: ["Angular", "TypeScript", "SASS", "Node", "Express", "Sequelize"],
+      description:
+        "Projeto desenvolvido como parte de um teste técnico para uma vaga, consistindo na criação do front-end e da API para um CRUD de clientes, e com a funcionalidade de seleção de clientes.",
+      repositoryLink: "https://github.com/Paulo-Henrique-Santana/clima",
+    },
     {
       src: clima,
       name: "Clima",
@@ -55,10 +64,12 @@ const Projects = () => {
                 </S.BoxNameAndTechnologies>
                 <S.Description>{project.description}</S.Description>
                 <S.Links>
-                  <S.Link href={project.deployLink} target="_blank">
-                    <HiLink />
-                    Projeto
-                  </S.Link>
+                  {project.deployLink && (
+                    <S.Link href={project.deployLink} target="_blank">
+                      <HiLink />
+                      Projeto
+                    </S.Link>
+                  )}
                   <S.Link href={project.repositoryLink} target="_blank">
                     <HiLink />
                     Repositório
