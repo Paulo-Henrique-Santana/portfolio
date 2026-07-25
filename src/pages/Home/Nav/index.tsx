@@ -16,6 +16,7 @@ const Nav: React.FC<Props> = ({
   const nav = useRef<HTMLElement>(null);
   const links = [
     { href: "#about", text: "Sobre" },
+    { href: "#experience", text: "Experiência" },
     { href: "#skills", text: "Habilidades" },
     { href: "#projects", text: "Projetos" },
     { href: "#contact", text: "Contato" },
