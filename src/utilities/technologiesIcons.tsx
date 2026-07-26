@@ -2,11 +2,14 @@ import { DiSass } from "react-icons/di";
 import { FaAngular, FaNodeJs } from "react-icons/fa";
 import {
   SiCss3,
-  SiCypress,
+  SiDocker,
   SiExpress,
   SiGit,
   SiHtml5,
   SiJavascript,
+  SiMicrosoftsqlserver,
+  SiNestjs,
+  SiPostgresql,
   SiReact,
   SiSequelize,
   SiStyledcomponents,
@@ -18,10 +21,31 @@ interface TechnologiesIcons {
 }
 
 const technologiesIcons = {
-  ["Cypress"]: (
-    <SiCypress
+  ["NestJS"]: (
+    <SiNestjs
       style={{
-        color: "#ffffff",
+        color: "#e0234e",
+      }}
+    />
+  ),
+  ["SQL Server"]: (
+    <SiMicrosoftsqlserver
+      style={{
+        color: "#cc2927",
+      }}
+    />
+  ),
+  ["PostgreSQL"]: (
+    <SiPostgresql
+      style={{
+        color: "#4169e1",
+      }}
+    />
+  ),
+  ["Docker"]: (
+    <SiDocker
+      style={{
+        color: "#2496ed",
       }}
     />
   ),
